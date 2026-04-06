@@ -21,8 +21,5 @@ function actualizarCarrito() {
     });
 
     totalHTML.textContent = total;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> cd529dfec66ee5ad839de9b110f5c87e709192bf
+
