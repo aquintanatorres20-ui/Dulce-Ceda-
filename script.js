@@ -1,8 +1,5 @@
-let carrito = [];
-let total = 0;
-
-function Agregar(producto, precio) {
-    carrito.push({ producto, precio });
+function agregar(nombre, precio) {
+    carrito.push({ nombre, precio });
     total += precio;
 
     actualizarCarrito();
@@ -16,7 +13,7 @@ function actualizarCarrito() {
 
     carrito.forEach(item => {
         const li = document.createElement("li");
-        li.textContent = `${item.producto} - $${item.precio}`;
+        li.textContent = item.nombre + " - $" + item.precio;
         lista.appendChild(li);
     });
 
