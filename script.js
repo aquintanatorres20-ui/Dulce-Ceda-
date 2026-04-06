@@ -1,3 +1,6 @@
+let carrito = [];
+let total = 0;
+
 function agregar(nombre, precio) {
     carrito.push({ nombre, precio });
     total += precio;
