@@ -42,10 +42,13 @@
 
 
 <h2>Haz tu pedido</h2>
+
 <form>
     <input type="text" placeholder="Tu nombre">
-    <input type="text" placeholder="Producto">
-    <button>Enviar</button>
+
+    <button type="button" onclick="enviarPedido()">
+        Enviar pedido
+    </button>
 </form>
 
 </body>
@@ -57,10 +60,6 @@
         <li><a href="#">Pedidos</a></li>
     </ul>
 </nav>
-<a href="https://wa.me/573185954290" class="whatsapp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-<button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
 
 <div class="carrito-panel">
     <h3>🛒 Carrito</h3>
@@ -69,6 +68,9 @@
 </div>
 
 <script src="script.js"></script>
+<a href="https://wa.me/573185954290" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>
 
