@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafeteria Dulce & Ceda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<h1> Cafeteria Dulce & Ceda</h1>
+<p>Dulce como el amor, suave como la seda</p>
+
+     <section>
+    <h2>Menú</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <img src="img/torta.jpg">
+            <p> torta</p>
+            <p>$20.000</p>
+            <button onclick="agregar('torta', 20000)">agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/galletas.jpg">
+            <p> galletas</p>
+            <p>$20.000</p>
+            <button onclick="agregar('galletas', 20000)">agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/cafe.jpg">
+            <p> cafe</p>
+            <p>$10.000</p>
+            <button onclick="agregar('cafe', 10000)">agregar</button>
+        </div>
+
+    </div>
+</section>
+
+
+<h2>Haz tu pedido</h2>
+<form>
+    <input type="text" placeholder="Tu nombre">
+    <input type="text" placeholder="Producto">
+    <button>Enviar</button>
+</form>
+
+</body>
+<nav class="navbar">
+    <h2>☕ Dulce & Seda</h2>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Menú</a></li>
+        <li><a href="#">Pedidos</a></li>
+    </ul>
+</nav>
+<a href="https://wa.me/573185954290" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
+
+<div class="carrito-panel">
+    <h3>🛒 Carrito</h3>
+    <ul id="carrito"></ul>
+    <p><b>Total: $<span id="total">0</span></b></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
